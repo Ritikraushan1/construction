@@ -31,3 +31,19 @@ body {
     text-wrap: balance;
   }
 }
+
+.bg-custom1 {
+  background-image: url("/images/img2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bg-custom2 {
+  background-image: url("/images/img3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bg-custom3 {
+  background-image: url("/images/img4.jpg");
+  background-size: cover;
+  background-position: center;
+}
