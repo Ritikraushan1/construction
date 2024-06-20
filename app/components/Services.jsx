@@ -35,11 +35,11 @@ export default function Services() {
                 <hr className='border-[1px] border-yellow-400 w-10' />
                 <h2 className="relative inline-block text-xl font-semibold text-yellow-400 px-3 bg-black z-10">What We Do</h2>
             </div>
-            <div className=" ml-12 pt-5"><p className=' text-3xl font-semibold uppercase'>Provide The Best<br /> Services</p></div>
+            <div className=" ml-12 pt-5"><p className=' text-3xl font-semibold uppercase text-white'>Provide The Best<br /> Services</p></div>
             <div className=" pt-10 flex gap-[75px]">
                 {services.map((service, index) => (
                     <div key={index} className="flex flex-col gap-y-3 border-2 px-5 rounded-sm py-10 border-white border-opacity-10">
-                        <p className='text-2xl'>{service.icon}</p>
+                        <p className='text-2xl text-white'>{service.icon}</p>
                         <p className='text-md uppercase'>{service.title}</p>
                         <p className='text-md text-white text-opacity-40' >{service.description}</p>
                     </div>
