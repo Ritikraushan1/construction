@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
     return (
-        <div className=' bg-white py-12 h-[90%] '>
+        <div className=' bg-white py-16 h-[90%] '>
             <div className=" flex flex-col-1 lg:flex-row mx-[10%] gap-x-32">
                 <div className=" flex flex-row gap-7">
                     <div className="">
