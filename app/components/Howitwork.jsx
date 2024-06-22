@@ -57,7 +57,7 @@ export default function Howitwork() {
                 {steps.map((step, index) => (
                     <div key={step.id} className="flex flex-col items-center">
                         <div className="flex flex-col items-center">
-                            <div className=" flex flex-row items-center">
+                            <div className=" flex flex-row items-center space-x-0">
 
                                 <button
                                     className={`w-10 h-10 rounded-full border-2 ${activeStep >= step.id ? 'bg-black text-white' : 'border-black text-black'}`}
@@ -65,9 +65,9 @@ export default function Howitwork() {
                                 >
                                     {step.id}
                                 </button>
-                                {step.id < 6 && step.id >= 1 && (
+                                {/* {step.id < 6 && step.id >= 1 && (
                                     <div className="w-12 border-dotted mr-0 border-b-2 border-black"></div>
-                                )}
+                                )} */}
                             </div>
                             <p className={`text-sm mt-3 ${activeStep >= step.id ? 'text-black' : 'text-gray-500'}`}>{step.title}</p>
                         </div>
