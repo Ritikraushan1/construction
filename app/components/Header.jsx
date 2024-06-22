@@ -7,12 +7,12 @@ function Header() {
         setMenuOpen(!menuOpen);
     }
     return (
-        <div className=' absolute top-0 left-0 w-full flex justify-between px-5 py-5 z-50'>
-            <div className=' absolute px-5 py-7'>
-                <div className="flex flex-row justify-between items-center w-screen px-12">
+        <div className=' absolute top-0 left-0 w-screen flex justify-between px-5 py-5 z-50'>
+            <div className=' absolute px-5'>
+                <div className=" fixed flex flex-row justify-between items-center w-screen px-12">
                     <p className=' text-black text-2xl font-bold'>Construction Ease</p>
                     <div className="">
-                        <button className=' flex flex-row items-center gap-3 text-black opacity-70 mr-10' onClick={toggleMenu}>
+                        <button className=' flex flex-row items-center gap-3 text-white opacity-70 mr-10' onClick={toggleMenu}>
                             <p>Menu</p>
                             <div><AiOutlineMenuFold size={20} /></div>
                         </button>
@@ -20,13 +20,13 @@ function Header() {
                 </div>
                 {menuOpen && (<div className=' absolute top-0 left-0 ml-[85%] pt-20'>
                     <button
-                        className='absolute top-5 right-5 text-black text-2xl'
+                        className='absolute top-5 right-5 text-white text-2xl'
                         onClick={toggleMenu}
                     >
                         &times; {/* Close button */}
                     </button>
                     <nav className="flex flex-col items-end space-y-1">
-                        <a href="#" className="text-2xl text-white opacity-60 hover:opacity-95">Home</a>
+                        <a href="/" className="text-2xl text-white opacity-60 hover:opacity-95">Home</a>
                         <a href="#" className="text-2xl text-white opacity-60 hover:opacity-95">Services</a>
                         <a href="#" className="text-2xl text-white opacity-60 hover:opacity-95">Projects</a>
                         <a href="#" className="text-2xl text-white opacity-60 hover:opacity-95">Interior Design</a>

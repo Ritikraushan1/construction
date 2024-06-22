@@ -7,7 +7,7 @@ import Howitwork from "./components/Howitwork";
 
 export default function Home() {
   return (
-    <main className=" bg-black">
+    <main className=" w-screen overflow-x-hidden">
       <Hero />
       <About />
       <Services />

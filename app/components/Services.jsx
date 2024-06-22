@@ -30,7 +30,7 @@ const services = [
 
 export default function Services() {
     return (
-        <div className='bg-black h-screen flex items-center justify-center'>
+        <div className='bg-black w-screen h-screen flex items-center justify-center'>
             <div className=' bg-black py-20  ml-[10%] mr-[10%]'>
                 <div className="flex flex-row items-center">
                     <hr className='border-[1px] border-yellow-400 w-10' />

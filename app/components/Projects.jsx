@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Projects() {
     return (
-        <div className=' h-screen'>
+        <div className='w-screen h-screen'>
             <div className=" flex text-white flex-col-1 lg:flex-col-3">
                 <div className=" bg-custom3 w-[33%] h-[100vh]">
                     <div className="bg-black bg-opacity-40 h-full">
