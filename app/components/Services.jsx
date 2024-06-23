@@ -30,7 +30,7 @@ const services = [
 
 export default function Services() {
     return (
-        <div className='bg-black w-screen h-max lg:h-screen flex items-center justify-center pt-10 lg:pt-0 md:pt-5'>
+        <div className='bg-black w-screen h-max lg:h-screen flex items-center justify-center pt-10 lg:pt-0 md:pt-5 pb-10 lg:pb-0'>
             <div className=' bg-black  ml-[10%] mr-[10%]'>
                 <div className="flex flex-row items-center">
                     <hr className='border-[1px] border-yellow-400 w-10' />
@@ -42,7 +42,7 @@ export default function Services() {
                         <div key={index} className="flex flex-col flex-col-1 lg:flex-col-4 gap-y-3 border-2 px-5 rounded-sm pt-16 py-10 border-white border-opacity-10">
                             <p className='text-2xl text-white'>{service.icon}</p>
                             <p className='text-md uppercase text-white'>{service.title}</p>
-                            <p className='text-md text-white text-opacity-40' >{service.description}</p>
+                            <p className='text-md text-white text-opacity-40 text-sm' >{service.description}</p>
                         </div>
                     ))}
                 </div>

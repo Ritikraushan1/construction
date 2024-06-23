@@ -57,9 +57,9 @@ export default function Howitwork() {
                 {steps.map((step, index) => (
                     <div key={step.id} className="flex flex-col items-center">
                         <div className="flex flex-col items-center">
-                            <div className=" flex flex-row items-center space-x-0 gap-x-0" >
+                            <div className=" flex flex-col md:flex-row items-center justify-center" >
                                 {step.id <= 6 && step.id > 1 && (
-                                    <div className="w-12 border-dashed border-b-2 border-black"></div>
+                                    <div className="hidden md:flex w-12 border-dashed border-b-2 border-black"></div>
                                 )}
                                 <button
                                     className={`w-10 h-10 rounded-full border-2 ${activeStep >= step.id ? 'bg-black text-white' : 'border-black text-black'}`}
@@ -68,7 +68,7 @@ export default function Howitwork() {
                                     {step.id}
                                 </button>
                                 {step.id < 6 && step.id >= 1 && (
-                                    <div className="w-12 border-dashed mr-0 border-b-2 border-black"></div>
+                                    <div className=" hidden md:flex w-12 border-dashed mr-0 border-b-2 border-black"></div>
                                 )}
                             </div>
                             <p className={`text-sm mt-3 ${activeStep >= step.id ? 'text-black' : 'text-gray-500'}`}>{step.title}</p>
@@ -77,15 +77,15 @@ export default function Howitwork() {
 
                 ))}
             </div>
-            <div className=" flex flex-col items-center w-[85%]">
+            <div className=" flex flex-col items-center w-[100%] lg:w-[85%]">
                 <img src={steps[activeStep - 1].image} alt={steps[activeStep - 1].title} className="mx-auto mb-4 h-60 w-60" />
                 <div className="flex flex-row gap-2 items-start mt-4 border-2 border-black px-5 py-3 text-black mx-12 lg:mx-60 bg-white">
                     <div className=" flex flex-row items-center gap-2">
                         <p className=' text-xl font-bold'>0{steps[activeStep - 1].id}</p>
                     </div>
                     <div className=" text-left mr-5">
-                        <h2 className="text-xl font-bold">{steps[activeStep - 1].title}</h2>
-                        <p className="text-lg pt-1">{steps[activeStep - 1].description}</p>
+                        <h2 className="text-lg lg:text-xl font-bold">{steps[activeStep - 1].title}</h2>
+                        <p className="text-sm lg:text-lg pt-1">{steps[activeStep - 1].description}</p>
                     </div>
                 </div>
             </div>
