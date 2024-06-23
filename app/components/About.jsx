@@ -33,7 +33,7 @@ function About() {
                     </div>
                     <div className="flex flex-row items-center pt-12">
                         <hr className='border-[1px] border-white w-10' />
-                        <button className='bg-yellow-300 hover:bg-white text-black border-black border-[1px] border-opacity-25 ml-7 px-7 py-2 rounded-sm uppercase text-sm'>
+                        <button className='bg-yellow-300 hover:bg-white text-black hover:border-black hover:border-[1px] border-opacity-25 ml-7 px-7 py-2 rounded-sm uppercase text-sm'>
                             <a href="#">Read More</a>
                         </button>
                     </div>
