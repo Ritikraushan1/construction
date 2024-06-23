@@ -48,7 +48,7 @@ export default function Howitwork() {
     };
 
     return (
-        <div className=' bg-slate-100 flex flex-col items-center justify-center text-center h-full lg:h-screen w-screen pt-5 lg:pt-0 pb-5 lg:pb-0'>
+        <div className=' bg-slate-100 flex flex-col items-center justify-center text-center h-full md:h-screen lg:h-screen w-screen pt-5 lg:pt-0 pb-5 lg:pb-0'>
             <div className="">
                 <h1 className=' text-2xl lg:text-4xl font-bold text-black font-rufina'>How it Works</h1>
                 <p className=' text-black text-sm lg:text-xl leading-7 pt-3 font-dmsans mx-7 lg:mx-0'>Our house construction steps are simple and easy to understand:<br />Plan - Build - Track - Settle In.</p>
