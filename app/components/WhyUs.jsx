@@ -2,7 +2,7 @@ import React from 'react'
 
 function WhyUs() {
     return (
-        <div className='flex flex-col justify-center items-center lg:gap-y-24 lg:pt-20 text-center w-screen h-screen bg-white text-black'>
+        <div className='flex flex-col justify-center items-center gap-y-2 lg:gap-y-24 pt-0 lg:pt-20 text-center w-screen h-screen bg-white text-black'>
             <h1 className=' text-2xl lg:text-4xl font-bold font-rufina'>Why Construction Ease?</h1>
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-x-20">
                 <div className=" flex flex-col items-center justify-center">

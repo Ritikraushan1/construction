@@ -48,12 +48,12 @@ export default function Howitwork() {
     };
 
     return (
-        <div className=' bg-slate-100 flex flex-col items-center justify-center text-center h-screen w-screen'>
+        <div className=' bg-slate-100 flex flex-col items-center justify-center text-center h-full lg:h-screen w-screen pt-5 lg:pt-0 pb-5 lg:pb-0'>
             <div className="">
-                <h1 className=' text-4xl font-bold text-black font-rufina'>How it Works</h1>
-                <p className=' text-black text-xl leading-7 pt-3 font-dmsans'>Our house construction steps are simple and easy to understand:<br />Plan - Build - Track - Settle In.</p>
+                <h1 className=' text-2xl lg:text-4xl font-bold text-black font-rufina'>How it Works</h1>
+                <p className=' text-black text-sm lg:text-xl leading-7 pt-3 font-dmsans mx-7 lg:mx-0'>Our house construction steps are simple and easy to understand:<br />Plan - Build - Track - Settle In.</p>
             </div>
-            <div className="flex justify-center items-center pt-5 space-x-4 mb-8">
+            <div className="flex justify-center items-center mx-12 pt-5 space-x-4 mb-8">
                 {steps.map((step, index) => (
                     <div key={step.id} className="flex flex-col items-center">
                         <div className="flex flex-col items-center">
@@ -78,8 +78,8 @@ export default function Howitwork() {
                 ))}
             </div>
             <div className=" flex flex-col items-center w-[85%]">
-                <img src={steps[activeStep - 1].image} alt={steps[activeStep - 1].title} className="mx-auto mb-4 h-40 w-40" />
-                <div className="flex flex-row gap-2 items-start mt-4 border-2 border-black px-5 py-3 text-black mx-60 bg-white">
+                <img src={steps[activeStep - 1].image} alt={steps[activeStep - 1].title} className="mx-auto mb-4 h-60 w-60" />
+                <div className="flex flex-row gap-2 items-start mt-4 border-2 border-black px-5 py-3 text-black mx-12 lg:mx-60 bg-white">
                     <div className=" flex flex-row items-center gap-2">
                         <p className=' text-xl font-bold'>0{steps[activeStep - 1].id}</p>
                     </div>

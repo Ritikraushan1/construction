@@ -9,7 +9,7 @@ function Hero() {
         setMenuOpen(!menuOpen);
     };
     return (
-        <div className=' relative bg-hero h-screen'>
+        <div className=' relative bg-hero h-screen w-screen'>
             <div className=' w-screen h-screen bg-black bg-opacity-60 z-0'>
                 <div className="absolute pt-[30%] text-black z-40">
                     <p className=' text-5xl ml-20 font-semibold text-white leading-16'>APARTMENT <span className=' ml-20 text-yellow-400'>RENOVATIONS</span><br />IN MANCHESTER AND LEVERPOOL</p>

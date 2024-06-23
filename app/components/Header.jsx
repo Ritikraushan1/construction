@@ -12,13 +12,13 @@ function Header() {
                 <div className=" fixed flex flex-row justify-between items-center w-screen px-12">
                     <p className=' text-black text-2xl font-bold'>Construction Ease</p>
                     <div className="">
-                        <button className=' flex flex-row items-center gap-3 text-yellow-500 opacity-70 mr-10' onClick={toggleMenu}>
+                        {!menuOpen && <button className=' flex flex-row items-center gap-3 text-yellow-500 opacity-70 mr-10' onClick={toggleMenu}>
                             <p>Menu</p>
                             <div><AiOutlineMenuFold size={20} /></div>
-                        </button>
+                        </button>}
                     </div>
                 </div>
-                {menuOpen && (<div className=' w-screen absolute top-0 -left-10 pt-20'>
+                {menuOpen && (<div className=' w-screen absolute top-0 -left-10 pt-10'>
                     <button
                         className='absolute top-5 right-5 text-white text-2xl'
                         onClick={toggleMenu}
