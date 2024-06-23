@@ -13,7 +13,7 @@ function Footer() {
                 </div>
             </div>
             <div className=" bg-gray-900 grid grid-cols-1 lg:grid-cols-4 px-20 py-10 w-screen">
-                <div className=" mr-10">
+                <div className=" lg:mr-10">
                     <h1 className=' text-xl font-bold'>About Us</h1>
                     <div className=" border-b-2 border-yellow-400 mr-[80%] pt-2"></div>
                     <p className=' text-lg leading-8 pt-8 text-white opacity-70'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi alias nisi id amet aliquid accusantium aliquam asperiores commodi eaque, praesentium</p>
@@ -26,24 +26,24 @@ function Footer() {
 
                     </div>
                 </div>
-                <div className=" ml-2 mr-10">
+                <div className=" lg:ml-2 mr-10 pt-8 lg:pt-0">
                     <h1 className=' text-xl font-bold'>Quick Links</h1>
                     <div className=" border-b-2 border-yellow-400 mr-[80%] pt-2"></div>
-                    <div className="grid grid-cols-2 pt-8 text-white opacity-70">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 pt-5 lg:pt-8 text-white opacity-70">
                         <div className=" flex flex-col gap-y-3">
                             <a href="">About Us</a>
                             <a href="">Our Services</a>
                             <a href="">Blog</a>
                             <a href="">Contact Us</a>
                         </div>
-                        <div className="flex flex-col gap-y-3">
+                        <div className="flex flex-col gap-y-3 pt-3 lg:pt-0">
                             <a href="">Testimonials</a>
                             <a href="">Careers</a>
                             <a href="">FAQ</a>
                         </div>
                     </div>
                 </div>
-                <div className=" ml-2 mr-10">
+                <div className=" lg:ml-2 lg:mr-10 pt-8 lg:pt-0">
                     <h1 className=' text-xl font-bold'>Head Office</h1>
                     <div className=" border-b-2 border-yellow-400 mr-[80%] pt-2"></div>
                     <div className=" pt-8 text-white opacity-70">
@@ -55,17 +55,17 @@ function Footer() {
                         <a href="">Office Timing: 9am to 5pm</a>
                     </div>
                 </div>
-                <div className=" ml-2 mr-10">
+                <div className=" lg:ml-2 lg:mr-10 pt-8 lg:pt-0">
                     <h1 className=' text-xl font-bold'>Newsletter</h1>
                     <div className=" border-b-2 border-yellow-400 mr-[80%] pt-2"></div>
                     <p className=' pt-8 text-white opacity-70'>Subscribe to our newsletter for<br /> latest updates:</p>
-                    <div className=" flex flex-row mt-4 gap-2 bg-black items-center justify-between rounded-lg px-5 py-3 mr-10">
+                    <div className=" flex flex-row mt-4 gap-2 bg-black items-center justify-between rounded-lg px-5 py-3 lg:mr-10">
                         <input type="email" placeholder='Email Address*' className=' bg-black outline-none text-yellow-400 rounded-md' />
                         <button className=''><IoMdMail size={20} color='yellow' /></button>
                     </div>
                 </div>
             </div>
-            <div className="w-screen bg-black flex flex-row justify-between px-20 pb-2">
+            <div className="w-screen bg-black flex flex-col items-center lg:flex-row justify-between px-20 pb-2">
                 <p className=' text-center pt-4 text-white opacity-70'>© 2024 All Rights Reserved.</p>
                 <div className=" flex flex-row gap-x-4 pt-4 text-white opacity-60">
                     <a href=""><FaFacebookF /></a>

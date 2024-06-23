@@ -78,7 +78,7 @@ export default function Howitwork() {
                 ))}
             </div>
             <div className=" flex flex-col items-center w-[85%]">
-                <img src={steps[activeStep - 1].image} alt={steps[activeStep - 1].title} className="mx-auto mb-4" />
+                <img src={steps[activeStep - 1].image} alt={steps[activeStep - 1].title} className="mx-auto mb-4 h-40 w-40" />
                 <div className="flex flex-col items-start mt-4 border-2 border-black px-5 py-3 text-black mx-60 bg-white">
                     <div className=" flex flex-row items-center gap-2">
                         <p className=' text-xl font-bold'>0{steps[activeStep - 1].id}</p>
