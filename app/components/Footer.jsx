@@ -60,8 +60,9 @@ function Footer() {
                     <h1 className=' text-xl font-bold text-white'>Newsletter</h1>
                     <div className=" border-b-2 border-yellow-400 mr-[80%] pt-2"></div>
                     <p className=' pt-8 text-white opacity-70 text-sm'>Subscribe to our newsletter for<br /> latest updates:</p>
-                    <div className=" flex flex-row mt-4 gap-2 bg-black items-center justify-between rounded-lg px-5 py-3 lg:mr-10">
-                        <input type="email" placeholder='Email Address*' className=' bg-black outline-none text-yellow-400 rounded-md' />
+
+                    <div className=" flex flex-row mt-4 gap-2 bg-black items-center justify-between rounded-lg px-3 py-2">
+                        <input type="email" placeholder='Email Address*' className=' bg-black outline-none text-yellow-400 rounded-md w-32' />
                         <button className=''><IoMdMail size={20} color='yellow' /></button>
                     </div>
                 </div>
