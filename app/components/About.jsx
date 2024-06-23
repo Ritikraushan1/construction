@@ -6,7 +6,7 @@ function About() {
             <div className=" flex flex-col lg:flex-row mx-5 md:mx-[10%] gap-x-32">
                 <div className=" flex flex-row gap-7">
                     <div className="">
-                        <img src="/images/Asset1.svg" alt="" className=" w-[350px] h-[550px] rounded-sm" />
+                        <img src="/images/Asset1.svg" alt="" className=" w-[450px] h-[650px] rounded-sm" />
                     </div>
                     {/* <div className=" mt-[20%]">
                         <img src="/images/Asset1.svg" alt="" className=" w-[250px] h-[450px] rounded-sm" />
