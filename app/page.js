@@ -5,6 +5,7 @@ import About from "./components/About";
 import Hero from "./components/Hero";
 import Howitwork from "./components/Howitwork";
 import Video from "./components/Video";
+import WhyUs from "./components/WhyUs";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <Services />
       <Projects />
+      <WhyUs />
       <Video />
       <Howitwork />
     </main>
