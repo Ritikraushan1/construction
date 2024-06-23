@@ -6,6 +6,7 @@ import { GoArrowUpRight } from "react-icons/go";
 function Hero() {
     const [menuOpen, setMenuOpen] = useState(false);
     const toggleMenu = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
         setMenuOpen(!menuOpen);
     };
     return (
@@ -40,17 +41,17 @@ function Hero() {
                         </div>
                     </div>
                     {/* 2nd column */}
-                    <div className="grid grid-cols-7 z-50">
+                    <div className="grid grid-cols-7">
                         <div className=" border-[1px] border-white border-opacity-5">
                             <h1 className="text-white text-2xl font-bold"></h1>
                         </div>
-                        <div className="border-[1px] border-white border-opacity-5 flex items-center justify-center">
+                        <div className="border-[1px] border-white border-opacity-5 flex items-center justify-center z-50">
                             <h1 className="text-white text-xs text-center opacity-50">Repair<br /> and construction<br /> company</h1>
                         </div>
                         <div className="border-[1px] border-white border-opacity-5">
                             <h1 className="text-white text-2xl font-bold"></h1>
                         </div>
-                        <div className="border-[1px] border-white border-opacity-5">
+                        <div className="border-[1px] border-white border-opacity-5 z-50">
                             <div className=' px-5 py-5 flex flex-col items-start justify-between h-full hover:bg-[#000000] hover:bg-opacity-100'>
                                 <p className=' text-xs text-yellow-300'>/01</p>
                                 <p className=' text-xs opacity-50 text-white'>Feel your idea and<br /> make a design product.</p>
