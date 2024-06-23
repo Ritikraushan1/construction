@@ -2,13 +2,13 @@ import React from 'react'
 
 function About() {
     return (
-        <div className=' bg-white py-16 h-screen items-center justify-center flex w-screen '>
-            <div className=" flex flex-col-1 lg:flex-row mx-[10%] gap-x-32">
-                <div className=" flex flex-row gap-7">
+        <div className=' bg-white h-max lg:h-screen items-center justify-center flex w-screen pt-10 lg:pt-0 pb-10 lg:pb-0'>
+            <div className=" flex flex-col lg:flex-row mx-[10%] gap-x-32">
+                <div className=" flex flex-col lg:flex-row gap-7 items-center lg:items-start">
                     <div className="">
                         <img src="/images/img1.jpg" alt="" className=" w-[250px] h-[450px] rounded-sm" />
                     </div>
-                    <div className=" mt-[20%]">
+                    <div className=" mt-0 lg:mt-[20%]">
                         <img src="/images/img1.jpg" alt="" className=" w-[250px] h-[450px] rounded-sm" />
                     </div>
                 </div>

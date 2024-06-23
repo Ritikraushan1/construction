@@ -13,11 +13,11 @@ function Footer() {
                     <button className=' border-[1px] text-xs border-white border-opacity-35 mt-10 px-10 py-3 rounded-sm uppercase'><a href="" className=' opacity-70'>Contact Us</a></button>
                 </div>
             </div>
-            <div className=" bg-gray-900 grid grid-cols-1 lg:grid-cols-4 px-20 py-10 w-screen">
+            <div className=" bg-gray-900 grid grid-cols-1 lg:grid-cols-4 px-20 py-16 w-screen">
                 <div className=" lg:mr-10">
-                    <h1 className=' text-xl font-bold'>About Us</h1>
+                    <h1 className=' text-xl font-bold text-white'>About Us</h1>
                     <div className=" border-b-2 border-yellow-400 mr-[80%] pt-2"></div>
-                    <p className=' text-lg leading-8 pt-8 text-white opacity-70'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi alias nisi id amet aliquid accusantium aliquam asperiores commodi eaque, praesentium</p>
+                    <p className=' text-lg leading-8 pt-8 text-white opacity-70'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi alias nisi id amet aliquid accusantium aliquam</p>
                     <div className=" flex flex-row pt-4 gap-3">
                         <a href="" className=' px-4 py-3 bg-black text-white rounded-md'><FaFacebookF /></a>
                         <a href="" className=' px-4 py-3 bg-black text-white rounded-md'><FaInstagram /></a>
@@ -28,7 +28,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className=" lg:ml-2 mr-10 pt-8 lg:pt-0">
-                    <h1 className=' text-xl font-bold'>Quick Links</h1>
+                    <h1 className=' text-xl font-bold text-white'>Quick Links</h1>
                     <div className=" border-b-2 border-yellow-400 mr-[80%] pt-2"></div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 pt-5 lg:pt-8 text-white opacity-70">
                         <div className=" flex flex-col gap-y-3">
@@ -45,7 +45,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className=" lg:ml-2 lg:mr-10 pt-8 lg:pt-0">
-                    <h1 className=' text-xl font-bold'>Head Office</h1>
+                    <h1 className=' text-xl font-bold text-white'>Head Office</h1>
                     <div className=" border-b-2 border-yellow-400 mr-[80%] pt-2"></div>
                     <div className=" pt-8 text-white opacity-70">
                         <p className=' leading-7'>125 Big Bella, Bangalore, India,<br /> 7637368</p>
@@ -57,7 +57,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className=" lg:ml-2 lg:mr-10 pt-8 lg:pt-0">
-                    <h1 className=' text-xl font-bold'>Newsletter</h1>
+                    <h1 className=' text-xl font-bold text-white'>Newsletter</h1>
                     <div className=" border-b-2 border-yellow-400 mr-[80%] pt-2"></div>
                     <p className=' pt-8 text-white opacity-70'>Subscribe to our newsletter for<br /> latest updates:</p>
                     <div className=" flex flex-row mt-4 gap-2 bg-black items-center justify-between rounded-lg px-5 py-3 lg:mr-10">

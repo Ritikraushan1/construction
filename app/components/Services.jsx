@@ -30,8 +30,8 @@ const services = [
 
 export default function Services() {
     return (
-        <div className='bg-black w-screen h-screen flex items-center justify-center'>
-            <div className=' bg-black py-20  ml-[10%] mr-[10%]'>
+        <div className='bg-black w-screen h-max lg:h-screen flex items-center justify-center pt-10 lg:pt-0 md:pt-5'>
+            <div className=' bg-black  ml-[10%] mr-[10%]'>
                 <div className="flex flex-row items-center">
                     <hr className='border-[1px] border-yellow-400 w-10' />
                     <h2 className="relative inline-block text-xl font-semibold text-yellow-400 px-3 bg-black z-10">What We Do</h2>
