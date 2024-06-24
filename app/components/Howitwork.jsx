@@ -59,7 +59,7 @@ export default function Howitwork() {
                         <div className="flex flex-col items-center">
                             <div className=" flex flex-col md:flex-row items-center justify-center" >
                                 {step.id <= 6 && step.id > 1 && (
-                                    <div className="hidden md:flex w-12 border-dashed border-b-2 border-black"></div>
+                                    <div className="hidden lg:flex w-12 border-dashed border-b-2 border-black"></div>
                                 )}
                                 <button
                                     className={`w-10 h-10 rounded-full border-2 ${activeStep >= step.id ? 'bg-black text-white' : 'border-black text-black'}`}
@@ -68,10 +68,10 @@ export default function Howitwork() {
                                     {step.id}
                                 </button>
                                 {step.id < 6 && step.id >= 1 && (
-                                    <div className=" hidden md:flex w-12 border-dashed mr-0 border-b-2 border-black"></div>
+                                    <div className=" hidden lg:flex w-12 border-dashed mr-0 border-b-2 border-black"></div>
                                 )}
                             </div>
-                            <p className={`text-sm mt-3 ${activeStep >= step.id ? 'text-black' : 'text-gray-500'}`}>{step.title}</p>
+                            <p className={`hidden lg:flex text-sm mt-3 ${activeStep >= step.id ? 'text-black' : 'text-gray-500'}`}>{step.title}</p>
                         </div>
                     </div>
 
