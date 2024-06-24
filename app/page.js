@@ -16,8 +16,8 @@ export default function Home() {
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
-    const userSelection = Cookies.get("userSelection");
-    if (!userSelection) {
+    const location = Cookies.get("location");
+    if (!location) {
       setShowPopup(true);
     }
   }, []);

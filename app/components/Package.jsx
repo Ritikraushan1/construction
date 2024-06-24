@@ -1,12 +1,14 @@
 "use client"
 import React, { useState, useEffect } from 'react'
 import Cookies from 'js-cookie';
+import { FaPlus, FaMinus } from "react-icons/fa";
+
 
 const packages = {
-    "Delhi-NCR": [
+    "Delhi - NCR": [
         {
             name: "Affordable Luxury Package",
-            price: "Rs. 1599 SQ/FT (incl. gst)",
+            price: "Rs. D1599 SQ/FT (incl. gst)",
             features: {
                 Kitchen: [
                     "LAMINATE FINISH KITCHEN OF MERINO, SKYDECOR, VIRGO",
@@ -77,7 +79,7 @@ const packages = {
         },
         {
             name: "Luxury Package",
-            price: "Rs. 1999 SQ/FT (incl. gst)",
+            price: "Rs. D1999 SQ/FT (incl. gst)",
             features: {
                 Designing: [
                     "ARCHITECTURE 2D PLAN",
@@ -153,7 +155,7 @@ const packages = {
         },
         {
             name: "Ultra Luxury Package",
-            price: "Rs. 2499 SQ/FT (incl. gst)",
+            price: "Rs. D2499 SQ/FT (incl. gst)",
             features: {
                 Kitchen: [
                     "ACRYLIC FINISH KITCHEN OF SKYDECOR, GENOA, VIRGO",
@@ -229,7 +231,7 @@ const packages = {
     "Ambala": [
         {
             name: "Affordable Luxury Package",
-            price: "Rs. 1599 SQ/FT (incl. gst)",
+            price: "Rs. A1599 SQ/FT (incl. gst)",
             features: {
                 Kitchen: [
                     "LAMINATE FINISH KITCHEN OF MERINO, SKYDECOR, VIRGO",
@@ -300,7 +302,7 @@ const packages = {
         },
         {
             name: "Luxury Package",
-            price: "Rs. 1999 SQ/FT (incl. gst)",
+            price: "Rs. A1999 SQ/FT (incl. gst)",
             features: {
                 Designing: [
                     "ARCHITECTURE 2D PLAN",
@@ -376,7 +378,7 @@ const packages = {
         },
         {
             name: "Ultra Luxury Package",
-            price: "Rs. 2499 SQ/FT (incl. gst)",
+            price: "Rs. A2499 SQ/FT (incl. gst)",
             features: {
                 Kitchen: [
                     "ACRYLIC FINISH KITCHEN OF SKYDECOR, GENOA, VIRGO",
@@ -452,7 +454,7 @@ const packages = {
     "Chandigarh": [
         {
             name: "Affordable Luxury Package",
-            price: "Rs. 1599 SQ/FT (incl. gst)",
+            price: "Rs. C1599 SQ/FT (incl. gst)",
             features: {
                 Kitchen: [
                     "LAMINATE FINISH KITCHEN OF MERINO, SKYDECOR, VIRGO",
@@ -523,7 +525,7 @@ const packages = {
         },
         {
             name: "Luxury Package",
-            price: "Rs. 1999 SQ/FT (incl. gst)",
+            price: "Rs. C1999 SQ/FT (incl. gst)",
             features: {
                 Designing: [
                     "ARCHITECTURE 2D PLAN",
@@ -599,7 +601,7 @@ const packages = {
         },
         {
             name: "Ultra Luxury Package",
-            price: "Rs. 2499 SQ/FT (incl. gst)",
+            price: "Rs. C2499 SQ/FT (incl. gst)",
             features: {
                 Kitchen: [
                     "ACRYLIC FINISH KITCHEN OF SKYDECOR, GENOA, VIRGO",
@@ -675,7 +677,7 @@ const packages = {
     "Dehradun": [
         {
             name: "Affordable Luxury Package",
-            price: "Rs. 1599 SQ/FT (incl. gst)",
+            price: "Rs. D1599 SQ/FT (incl. gst)",
             features: {
                 Kitchen: [
                     "LAMINATE FINISH KITCHEN OF MERINO, SKYDECOR, VIRGO",
@@ -746,7 +748,7 @@ const packages = {
         },
         {
             name: "Luxury Package",
-            price: "Rs. 1999 SQ/FT (incl. gst)",
+            price: "Rs. D1999 SQ/FT (incl. gst)",
             features: {
                 Designing: [
                     "ARCHITECTURE 2D PLAN",
@@ -822,7 +824,7 @@ const packages = {
         },
         {
             name: "Ultra Luxury Package",
-            price: "Rs. 2499 SQ/FT (incl. gst)",
+            price: "Rs. D2499 SQ/FT (incl. gst)",
             features: {
                 Kitchen: [
                     "ACRYLIC FINISH KITCHEN OF SKYDECOR, GENOA, VIRGO",
@@ -898,7 +900,7 @@ const packages = {
     "Indore": [
         {
             name: "Affordable Luxury Package",
-            price: "Rs. 1599 SQ/FT (incl. gst)",
+            price: "Rs. I1599 SQ/FT (incl. gst)",
             features: {
                 Kitchen: [
                     "LAMINATE FINISH KITCHEN OF MERINO, SKYDECOR, VIRGO",
@@ -969,7 +971,7 @@ const packages = {
         },
         {
             name: "Luxury Package",
-            price: "Rs. 1999 SQ/FT (incl. gst)",
+            price: "Rs. I1999 SQ/FT (incl. gst)",
             features: {
                 Designing: [
                     "ARCHITECTURE 2D PLAN",
@@ -1045,7 +1047,7 @@ const packages = {
         },
         {
             name: "Ultra Luxury Package",
-            price: "Rs. 2499 SQ/FT (incl. gst)",
+            price: "Rs. I2499 SQ/FT (incl. gst)",
             features: {
                 Kitchen: [
                     "ACRYLIC FINISH KITCHEN OF SKYDECOR, GENOA, VIRGO",
@@ -1121,7 +1123,7 @@ const packages = {
     "Meerut": [
         {
             name: "Affordable Luxury Package",
-            price: "Rs. 1599 SQ/FT (incl. gst)",
+            price: "Rs. M1599 SQ/FT (incl. gst)",
             features: {
                 Kitchen: [
                     "LAMINATE FINISH KITCHEN OF MERINO, SKYDECOR, VIRGO",
@@ -1192,7 +1194,7 @@ const packages = {
         },
         {
             name: "Luxury Package",
-            price: "Rs. 1999 SQ/FT (incl. gst)",
+            price: "Rs. M1999 SQ/FT (incl. gst)",
             features: {
                 Designing: [
                     "ARCHITECTURE 2D PLAN",
@@ -1268,7 +1270,7 @@ const packages = {
         },
         {
             name: "Ultra Luxury Package",
-            price: "Rs. 2499 SQ/FT (incl. gst)",
+            price: "Rs. M2499 SQ/FT (incl. gst)",
             features: {
                 Kitchen: [
                     "ACRYLIC FINISH KITCHEN OF SKYDECOR, GENOA, VIRGO",
@@ -1351,11 +1353,14 @@ export default function Package() {
         Royale: false,
     });
 
-    const toggleSection = (packageName) => {
-        setOpenSections((prev) => ({
-            ...prev,
-            [packageName]: !prev[packageName],
-        }));
+    const toggleSection = (sectionName) => {
+        setOpenSections((prev) => {
+            const newState = Object.keys(prev).reduce((acc, key) => {
+                acc[key] = key === sectionName ? !prev[key] : false;
+                return acc;
+            }, {});
+            return newState;
+        });
     };
 
     useEffect(() => {
@@ -1368,7 +1373,7 @@ export default function Package() {
 
     return (
         <div>
-            <div className="w-screen h-screen bg-slate-200">
+            <div className="w-screen h-full lg:h-screen bg-slate-200">
                 <div className="">
                     <h1 className=' text-2xl lg:text-4xl font-bold text-black font-rufina text-center'>Packages</h1>
                     <p className=' text-black text-sm lg:text-xl leading-7 pt-3 font-dmsans mx-7 lg:mx-0 text-center'>Find the best home construction packages.*</p>
@@ -1394,14 +1399,202 @@ export default function Package() {
                         </select>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-6 pt-5 mx-20">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 pt-5 mx-5 lg:mx-20">
                     {Array.isArray(currentPackages) && currentPackages.length > 0 ? (
                         currentPackages.map((pkg) => (
                             <div key={pkg.name} className="text-black">
                                 <div className="">
-                                    <div className="items-center justify-center bg-yellow-400 text-center py-3 flex flex-row text-sm gap-2 font-semibold">
+                                    <div className="items-center justify-center bg-yellow-400 text-center py-3 flex flex-row text-md gap-2 font-bold">
                                         <p>{pkg.name} - </p>
                                         <p>{pkg.price}</p>
+                                    </div>
+                                    <div className=" bg-white">
+                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-2 border-black border-opacity-40">
+                                            <button className='font-dmsans flex flex-row items-center justify-between w-full' onClick={() => toggleSection('Designing')}>
+                                                <p className=' font-bold'>Designing</p>
+                                                {openSections['Designing'] ? <FaMinus /> : <FaPlus />}
+                                            </button>
+                                        </div>
+                                        {openSections['Designing'] && (
+                                            <ul className="mx-10 py-3">
+                                                <ul>
+                                                    {pkg.features.Designing.map((feature, index) => (
+                                                        <li key={index} className="py-1">{feature}</li>
+                                                    ))}
+                                                </ul>
+                                            </ul>
+                                        )}
+                                    </div>
+                                    <div className=" bg-white">
+                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-2 border-black border-opacity-40">
+                                            <button className='font-dmsans flex flex-row items-center justify-between w-full' onClick={() => toggleSection('Structure')}>
+                                                <p className=' font-bold'>Structure</p>
+                                                {openSections['Structure'] ? <FaMinus /> : <FaPlus />}
+                                            </button>
+                                        </div>
+                                        {openSections['Structure'] && (
+                                            <ul className="mx-10 py-3">
+                                                <ul>
+                                                    {pkg.features.Structure.map((feature, index) => (
+                                                        <li key={index} className="py-1">{feature}</li>
+                                                    ))}
+                                                </ul>
+                                            </ul>
+                                        )}
+                                    </div>
+                                    <div className=" bg-white">
+                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-2 border-black border-opacity-40">
+                                            <button className='font-dmsans flex flex-row items-center justify-between w-full' onClick={() => toggleSection('FalseCeiling')}>
+                                                <p className=' font-bold'>False Ceiling</p>
+                                                {openSections['FalseCeiling'] ? <FaMinus /> : <FaPlus />}
+                                            </button>
+                                        </div>
+                                        {openSections['FalseCeiling'] && (
+                                            <ul className="mx-10 py-3">
+                                                <ul>
+                                                    {pkg.features.FalseCeiling.map((feature, index) => (
+                                                        <li key={index} className="py-1">{feature}</li>
+                                                    ))}
+                                                </ul>
+                                            </ul>
+                                        )}
+                                    </div>
+                                    <div className=" bg-white">
+                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-2 border-black border-opacity-40">
+                                            <button className='font-dmsans flex flex-row items-center justify-between w-full' onClick={() => toggleSection('Electricals')}>
+                                                <p className=' font-bold'>Electricals</p>
+                                                {openSections['Electricals'] ? <FaMinus /> : <FaPlus />}
+                                            </button>
+                                        </div>
+                                        {openSections['Electricals'] && (
+                                            <ul className="mx-10 py-3">
+                                                <ul>
+                                                    {pkg.features.Electricals.map((feature, index) => (
+                                                        <li key={index} className="py-1">{feature}</li>
+                                                    ))}
+                                                </ul>
+                                            </ul>
+                                        )}
+                                    </div>
+                                    <div className=" bg-white">
+                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-2 border-black border-opacity-40">
+                                            <button className='font-dmsans flex flex-row items-center justify-between w-full' onClick={() => toggleSection('DoorsWindows')}>
+                                                <p className=' font-bold'>Doors & Windows</p>
+                                                {openSections['DoorsWindows'] ? <FaMinus /> : <FaPlus />}
+                                            </button>
+                                        </div>
+                                        {openSections['DoorsWindows'] && (
+                                            <ul className="mx-10 py-3">
+                                                <ul>
+                                                    {pkg.features.DoorsWindows.map((feature, index) => (
+                                                        <li key={index} className="py-1">{feature}</li>
+                                                    ))}
+                                                </ul>
+                                            </ul>
+                                        )}
+                                    </div>
+
+                                    <div className=" bg-white">
+                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-2 border-black border-opacity-40">
+                                            <button className='font-dmsans flex flex-row items-center justify-between w-full' onClick={() => toggleSection('Flooring')}>
+                                                <p className=' font-bold'>Flooring</p>
+                                                {openSections['Flooring'] ? <FaMinus /> : <FaPlus />}
+                                            </button>
+                                        </div>
+                                        {openSections['Flooring'] && (
+                                            <ul className="mx-10 py-3">
+                                                <ul>
+                                                    {pkg.features.Flooring.map((feature, index) => (
+                                                        <li key={index} className="py-1">{feature}</li>
+                                                    ))}
+                                                </ul>
+                                            </ul>
+                                        )}
+                                    </div>
+                                    <div className=" bg-white">
+                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-2 border-black border-opacity-40">
+                                            <button className='font-dmsans flex flex-row items-center justify-between w-full' onClick={() => toggleSection('SanitaryWare')}>
+                                                <p className=' font-bold text-start'>Sanitary Ware and Fittings</p>
+                                                {openSections['SanitaryWare'] ? <FaMinus /> : <FaPlus />}
+                                            </button>
+                                        </div>
+                                        {openSections['SanitaryWare'] && (
+                                            <ul className="mx-10 py-3">
+                                                <ul>
+                                                    {pkg.features.SanitaryWare.map((feature, index) => (
+                                                        <li key={index} className="py-1">{feature}</li>
+                                                    ))}
+                                                </ul>
+                                            </ul>
+                                        )}
+                                    </div>
+                                    <div className=" bg-white">
+                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-2 border-black border-opacity-40">
+                                            <button className='font-dmsans flex flex-row items-center justify-between w-full' onClick={() => toggleSection('Painting')}>
+                                                <p className=' font-bold'>Painting</p>
+                                                {openSections['Painting'] ? <FaMinus /> : <FaPlus />}
+                                            </button>
+                                        </div>
+                                        {openSections['Painting'] && (
+                                            <ul className="mx-10 py-3">
+                                                <ul>
+                                                    {pkg.features.Painting.map((feature, index) => (
+                                                        <li key={index} className="py-1">{feature}</li>
+                                                    ))}
+                                                </ul>
+                                            </ul>
+                                        )}
+                                    </div>
+                                    <div className=" bg-white">
+                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-2 border-black border-opacity-40">
+                                            <button className='font-dmsans flex flex-row items-center justify-between w-full' onClick={() => toggleSection('Kitchen')}>
+                                                <p className=' font-bold'>Kitchen</p>
+                                                {openSections['Kitchen'] ? <FaMinus /> : <FaPlus />}
+                                            </button>
+                                        </div>
+                                        {openSections['Kitchen'] && (
+                                            <ul className="mx-10 py-3">
+                                                <ul>
+                                                    {pkg.features.Kitchen.map((feature, index) => (
+                                                        <li key={index} className="py-1">{feature}</li>
+                                                    ))}
+                                                </ul>
+                                            </ul>
+                                        )}
+                                    </div>
+                                    <div className=" bg-white">
+                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-2 border-black border-opacity-40">
+                                            <button className='font-dmsans flex flex-row items-center justify-between w-full' onClick={() => toggleSection('Miscellaneous')}>
+                                                <p className=' font-bold'>Other Miscellaneous</p>
+                                                {openSections['Miscellaneous'] ? <FaMinus /> : <FaPlus />}
+                                            </button>
+                                        </div>
+                                        {openSections['Miscellaneous'] && (
+                                            <ul className="mx-10 py-3">
+                                                <ul>
+                                                    {pkg.features.Miscellaneous.map((feature, index) => (
+                                                        <li key={index} className="py-1">{feature}</li>
+                                                    ))}
+                                                </ul>
+                                            </ul>
+                                        )}
+                                    </div>
+                                    <div className=" bg-white">
+                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-2 border-black border-opacity-40">
+                                            <button className='font-dmsans flex flex-row items-center justify-between w-full' onClick={() => toggleSection('Facilities')}>
+                                                <p className=' font-bold'>Other Facilities</p>
+                                                {openSections['Facilities'] ? <FaMinus /> : <FaPlus />}
+                                            </button>
+                                        </div>
+                                        {openSections['Facilities'] && (
+                                            <ul className="mx-10 py-3">
+                                                <ul>
+                                                    {pkg.features.Facilities.map((feature, index) => (
+                                                        <li key={index} className="py-1">{feature}</li>
+                                                    ))}
+                                                </ul>
+                                            </ul>
+                                        )}
                                     </div>
                                 </div>
                             </div>
