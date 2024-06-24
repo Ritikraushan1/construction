@@ -1373,7 +1373,7 @@ export default function Package() {
 
     return (
         <div>
-            <div className="w-screen h-full lg:h-screen bg-slate-200">
+            <div className="w-screen h-full lg:h-screen bg-slate-200 pt-0 lg:pt-10">
                 <div className="">
                     <h1 className=' text-2xl lg:text-4xl font-bold text-black font-rufina text-center'>Packages</h1>
                     <p className=' text-black text-sm lg:text-xl leading-7 pt-3 font-dmsans mx-7 lg:mx-0 text-center'>Find the best home construction packages.*</p>
@@ -1404,7 +1404,7 @@ export default function Package() {
                         currentPackages.map((pkg) => (
                             <div key={pkg.name} className="text-black">
                                 <div className="">
-                                    <div className="items-center justify-center bg-yellow-400 text-center py-3 flex flex-row text-md gap-2 font-bold">
+                                    <div className="items-center font-rufina justify-center bg-yellow-400 text-center py-3 flex flex-row text-md gap-2 font-bold">
                                         <p>{pkg.name} - </p>
                                         <p>{pkg.price}</p>
                                     </div>
