@@ -1348,10 +1348,19 @@ const packages = {
 export default function Package() {
     const [location, setLocation] = useState(Cookies.get("location") || "Select Location");
     const [openSections, setOpenSections] = useState({
-        Classic: false,
-        Premium: false,
-        Royale: false,
+        Designing: false,
+        Structure: false,
+        FalseCeiling: false,
+        Electricals: false,
+        DoorsWindows: false,
+        Flooring: false,
+        SanitaryWare: false,
+        Painting: false,
+        Kitchen: false,
+        Miscellaneous: false,
+        Facilities: false,
     });
+
 
     const toggleSection = (sectionName) => {
         setOpenSections((prev) => {
@@ -1418,7 +1427,7 @@ export default function Package() {
                                         {openSections['Designing'] && (
                                             <ul className="mx-10 py-3">
                                                 <ul>
-                                                    {pkg.features.Designing.map((feature, index) => (
+                                                    {pkg.features['Designing'].map((feature, index) => (
                                                         <li key={index} className="py-1">{feature}</li>
                                                     ))}
                                                 </ul>
