@@ -8,6 +8,7 @@ const Popup = ({ onClose }) => {
 
   const handleSave = () => {
     Cookies.set("location", selection, { expires: 7 });
+    window.location.reload();
     onClose();
   };
 
