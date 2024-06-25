@@ -1413,7 +1413,7 @@ export default function Package() {
                         currentPackages.map((pkg) => (
                             <div key={pkg.name} className="text-black">
                                 <div className="">
-                                    <div className="h-fit items-center font-rufina justify-center bg-yellow-400 text-center py-3 flex flex-row text-md gap-2 font-bold">
+                                    <div className="h-fit items-center font-rufina justify-center bg-yellow-400 text-center py-3 flex flex-row text-sm gap-2 font-bold">
                                         <p>{pkg.name} - </p>
                                         <p>{pkg.price}</p>
                                     </div>
