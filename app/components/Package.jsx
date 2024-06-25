@@ -1393,7 +1393,7 @@ export default function Package() {
                             value={location}
                             onChange={(e) => setLocation(e.target.value)}
                         >
-                            <option value="Select Location" disabled>Select Location</option>
+                            <option value="">Select Location</option>
                             <option value="Ambala">Ambala</option>
                             <option value="Chandigarh">Chandigarh</option>
                             <option value="Dehradun">Dehradun</option>

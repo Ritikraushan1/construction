@@ -17,7 +17,8 @@ export default function Home() {
 
   useEffect(() => {
     const location = Cookies.get("location");
-    if (!location) {
+    console.log(location);
+    if (!location || location === "Select Location") {
       setShowPopup(true);
     }
   }, []);
