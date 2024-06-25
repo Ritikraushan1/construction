@@ -14,7 +14,7 @@ const Popup = ({ onClose }) => {
 
   return (
     <div className="fixed bg-gray-800 bg-opacity-75 inset-0 flex items-center justify-center z-50">
-      <div className="bg-white py-10 px-32 rounded shadow-lg text-center w-[50%]">
+      <div className="bg-white py-10 px-5 lg:px-32 rounded shadow-lg text-center w-[90%] lg:w-[50%]">
         <div className="grid grid-cols-2 items-center justify-center">
           <div className=" flex items-center">
             <img
@@ -29,7 +29,7 @@ const Popup = ({ onClose }) => {
             </h2>
             <div className="w-[100%]">
               <select
-                className="border border-gray-300 p-2 text-black mb-4"
+                className="border border-gray-300 p-1 lg:p-2 text-black mb-4"
                 value={selection}
                 onChange={(e) => setSelection(e.target.value)}
               >
@@ -46,7 +46,7 @@ const Popup = ({ onClose }) => {
                 <option value="Yamunanagar">Yamunanagar</option>
               </select>
               <button
-                className="bg-black text-yellow-400 ml-3 px-4 py-2 rounded hover:bg-blue-700"
+                className="bg-black text-yellow-400 ml-3 px-4 py-1 lg:py-2 rounded hover:bg-blue-700"
                 onClick={handleSave}
               >
                 Search
