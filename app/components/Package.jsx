@@ -2528,12 +2528,12 @@ export default function Package() {
                         currentPackages.map((pkg) => (
                             <div key={pkg.name} className="text-black">
                                 <div className="">
-                                    <div className="h-fit items-center font-rufina justify-center bg-yellow-400 text-center py-3 flex flex-row text-sm gap-2 font-bold">
+                                    <div className="h-fit items-center font-dmsans justify-center bg-yellow-400 text-center py-3 flex flex-row text-sm gap-2 font-bold">
                                         <p>{pkg.name} - </p>
                                         <p>{pkg.price}</p>
                                     </div>
                                     <div className=" bg-white">
-                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-[1px] border-black border-opacity-40">
+                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-[1px]  border-black border-opacity-20">
                                             <button className='font-dmsans flex flex-row items-center justify-between w-full' onClick={() => toggleSection('Designing')}>
                                                 <p className=' font-bold'>Designing</p>
                                                 {openSections['Designing'] ? <FaMinus /> : <FaPlus />}
@@ -2550,7 +2550,7 @@ export default function Package() {
                                         )}
                                     </div>
                                     <div className=" bg-white">
-                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-[1px] border-black border-opacity-40">
+                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-[1px] border-black border-opacity-20">
                                             <button className='font-dmsans flex flex-row items-center justify-between w-full' onClick={() => toggleSection('Structure')}>
                                                 <p className=' font-bold'>Structure</p>
                                                 {openSections['Structure'] ? <FaMinus /> : <FaPlus />}
@@ -2567,7 +2567,7 @@ export default function Package() {
                                         )}
                                     </div>
                                     <div className=" bg-white">
-                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-[1px] border-black border-opacity-40">
+                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-[1px] border-black border-opacity-20">
                                             <button className='font-dmsans flex flex-row items-center justify-between w-full' onClick={() => toggleSection('FalseCeiling')}>
                                                 <p className=' font-bold'>False Ceiling</p>
                                                 {openSections['FalseCeiling'] ? <FaMinus /> : <FaPlus />}
@@ -2584,7 +2584,7 @@ export default function Package() {
                                         )}
                                     </div>
                                     <div className=" bg-white">
-                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-[1px] border-black border-opacity-40">
+                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-[1px] border-black border-opacity-20">
                                             <button className='font-dmsans flex flex-row items-center justify-between w-full' onClick={() => toggleSection('Electricals')}>
                                                 <p className=' font-bold'>Electricals</p>
                                                 {openSections['Electricals'] ? <FaMinus /> : <FaPlus />}
@@ -2601,7 +2601,7 @@ export default function Package() {
                                         )}
                                     </div>
                                     <div className=" bg-white">
-                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-[1px] border-black border-opacity-40">
+                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-[1px] border-black border-opacity-20">
                                             <button className='font-dmsans flex flex-row items-center justify-between w-full' onClick={() => toggleSection('DoorsWindows')}>
                                                 <p className=' font-bold'>Doors & Windows</p>
                                                 {openSections['DoorsWindows'] ? <FaMinus /> : <FaPlus />}
@@ -2619,7 +2619,7 @@ export default function Package() {
                                     </div>
 
                                     <div className=" bg-white">
-                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-[1px] border-black border-opacity-40">
+                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-[1px] border-black border-opacity-20">
                                             <button className='font-dmsans flex flex-row items-center justify-between w-full' onClick={() => toggleSection('Flooring')}>
                                                 <p className=' font-bold'>Flooring</p>
                                                 {openSections['Flooring'] ? <FaMinus /> : <FaPlus />}
@@ -2636,7 +2636,7 @@ export default function Package() {
                                         )}
                                     </div>
                                     <div className=" bg-white">
-                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-[1px] border-black border-opacity-40">
+                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-[1px] border-black border-opacity-20">
                                             <button className='font-dmsans flex flex-row items-center justify-between w-full' onClick={() => toggleSection('SanitaryWare')}>
                                                 <p className=' font-bold text-start'>Sanitary Ware and Fittings</p>
                                                 {openSections['SanitaryWare'] ? <FaMinus /> : <FaPlus />}
@@ -2653,7 +2653,7 @@ export default function Package() {
                                         )}
                                     </div>
                                     <div className=" bg-white">
-                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-[1px] border-black border-opacity-40">
+                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-[1px] border-black border-opacity-20">
                                             <button className='font-dmsans flex flex-row items-center justify-between w-full' onClick={() => toggleSection('Painting')}>
                                                 <p className=' font-bold'>Painting</p>
                                                 {openSections['Painting'] ? <FaMinus /> : <FaPlus />}
@@ -2670,7 +2670,7 @@ export default function Package() {
                                         )}
                                     </div>
                                     <div className=" bg-white">
-                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-[1px] border-black border-opacity-40">
+                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-[1px] border-black border-opacity-20">
                                             <button className='font-dmsans flex flex-row items-center justify-between w-full' onClick={() => toggleSection('Kitchen')}>
                                                 <p className=' font-bold'>Kitchen</p>
                                                 {openSections['Kitchen'] ? <FaMinus /> : <FaPlus />}
@@ -2687,7 +2687,7 @@ export default function Package() {
                                         )}
                                     </div>
                                     <div className=" bg-white">
-                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-[1px] border-black border-opacity-40">
+                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-[1px] border-black border-opacity-20">
                                             <button className='font-dmsans flex flex-row items-center justify-between w-full' onClick={() => toggleSection('Miscellaneous')}>
                                                 <p className=' font-bold'>Other Miscellaneous</p>
                                                 {openSections['Miscellaneous'] ? <FaMinus /> : <FaPlus />}
@@ -2704,7 +2704,7 @@ export default function Package() {
                                         )}
                                     </div>
                                     <div className=" bg-white">
-                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-[1px] border-black border-opacity-40">
+                                        <div className="flex flex-row mx-10 py-3 font-semibold border-b-[1px] border-black border-opacity-20">
                                             <button className='font-dmsans flex flex-row items-center justify-between w-full' onClick={() => toggleSection('Facilities')}>
                                                 <p className=' font-bold'>Other Facilities</p>
                                                 {openSections['Facilities'] ? <FaMinus /> : <FaPlus />}

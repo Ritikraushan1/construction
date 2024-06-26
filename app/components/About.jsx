@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
     return (
-        <div className=' bg-white py-16 h-max lg:h-screen items-center justify-center flex w-screen font-dmsans'>
+        <div className=' bg-white py-16 h-max md:h-full lg:h-screen items-center justify-center flex w-screen font-dmsans'>
             <div className=" flex flex-col lg:flex-row mx-5 md:mx-[10%] gap-x-32">
                 <div className=" flex flex-row gap-7">
                     <div className="">
@@ -33,7 +33,7 @@ function About() {
                     </div>
                     <div className="flex flex-row items-center pt-12">
                         <hr className='border-[1px] border-white w-10' />
-                        <button className='bg-yellow-300 hover:bg-white text-black hover:border-black hover:border-[1px] border-opacity-25 ml-7 px-7 py-2 rounded-sm uppercase text-sm'>
+                        <button className='bg-black hover:bg-white text-yellow-400 hover:text-black hover:border-black hover:border-[1px] border-opacity-25 ml-7 px-7 py-2 rounded-sm uppercase text-sm'>
                             <a href="#">Read More</a>
                         </button>
                     </div>

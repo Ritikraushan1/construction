@@ -125,7 +125,7 @@ export default function EnquiryForm() {
                         InputLabelProps={{ className: 'font-dmsans text-lg' }}
                     />
                     <div className="text-center mt-4">
-                        <Button variant="contained" className=' bg-black text-yellow-400 px-16 py-3 text-xl rounded-full' type="submit" endIcon={<SendIcon fontSize='large' />}>Submit</Button>
+                        <Button variant="contained" className='bg-black hover:bg-white text-yellow-400 hover:text-black hover:border-black hover:border-[1px] border-opacity-25 ml-7 px-7 py-3 rounded-sm uppercase text-sm' type="submit" endIcon={<SendIcon fontSize='large' />}>Submit</Button>
                     </div>
                 </form>
             </div>
