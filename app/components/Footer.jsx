@@ -5,9 +5,9 @@ import { IoMdMail } from "react-icons/io";
 function Footer() {
     return (
         <>
-            <div className='bg-footer text-white w-screen'>
+            <div className='bg-footer text-white w-screen font-dmsans'>
                 <div className='flex flex-col items-center justify-center py-24 z-50 bg-black bg-opacity-60'>
-                    <h2 className='text-yellow-400 text-2xl font-semibold uppercase'>Let's work together</h2>
+                    <h2 className='text-yellow-400 text-2xl font-semibold uppercase font-rufina'>Let's work together</h2>
                     <p className='hidden lg:flex text-center pt-7 opacity-80 text-sm'>Let us know what you're looking for in an agency. We'll take a look and see<br /> if this could be the start of something beautiful.</p>
                     <p className='flex lg:hidden text-center pt-7 opacity-80 mx-10 text-sm'>Let us know what you're looking for in an agency. We'll take a look and see if this could be the start of something beautiful.</p>
                     <button className=' border-[1px] text-xs border-white border-opacity-35 mt-10 px-10 py-3 rounded-sm uppercase'><a href="" className=' opacity-70'>Contact Us</a></button>
@@ -15,7 +15,7 @@ function Footer() {
             </div>
             <div className=" bg-black grid grid-cols-1 lg:grid-cols-4 px-20 py-16 w-screen">
                 <div className=" lg:mr-10">
-                    <h1 className=' text-xl font-bold text-white'>About Us</h1>
+                    <h1 className=' text-xl font-bold text-white font-rufina'>About Us</h1>
                     <div className=" border-b-2 border-yellow-400 mr-[80%] pt-2"></div>
                     <p className=' leading-8 pt-8 text-white opacity-70 text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi alias nisi id amet aliquid accusantium aliquam</p>
                     <div className=" flex flex-row pt-4 gap-5">
@@ -28,7 +28,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className=" lg:ml-2 mr-10 pt-8 lg:pt-0">
-                    <h1 className=' text-xl font-bold text-white'>Quick Links</h1>
+                    <h1 className=' text-xl font-bold text-white font-rufina'>Quick Links</h1>
                     <div className=" border-b-2 border-yellow-400 mr-[80%] pt-2"></div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 pt-5 lg:pt-8 text-white opacity-70 text-sm">
                         <div className=" flex flex-col gap-y-3">
@@ -45,7 +45,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className=" lg:ml-2 lg:mr-10 pt-8 lg:pt-0">
-                    <h1 className=' text-xl font-bold text-white'>Head Office</h1>
+                    <h1 className=' text-xl font-bold text-white font-rufina'>Head Office</h1>
                     <div className=" border-b-2 border-yellow-400 mr-[80%] pt-2"></div>
                     <div className=" pt-8 text-white opacity-70">
                         <p className=' leading-7 text-sm'>125 Big Bella, Bangalore, India,<br /> 7637368</p>
@@ -57,7 +57,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className=" lg:ml-2 lg:mr-10 pt-8 lg:pt-0">
-                    <h1 className=' text-xl font-bold text-white'>Newsletter</h1>
+                    <h1 className=' text-xl font-bold text-white font-rufina'>Newsletter</h1>
                     <div className=" border-b-2 border-yellow-400 mr-[80%] pt-2"></div>
                     <p className=' pt-8 text-white opacity-70 text-sm'>Subscribe to our newsletter for<br /> latest updates:</p>
 

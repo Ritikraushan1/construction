@@ -36,7 +36,7 @@ export default function EnquiryForm() {
     };
 
     return (
-        <div className="bg-white h-full lg:h-screen flex justify-center items-center">
+        <div className="bg-white h-full lg:h-screen flex justify-center items-center font-dmsans">
             <div className="w-full max-w-[90%] lg:max-w-[50%] p-6 bg-white rounded-lg">
                 <h1 className="text-4xl font-bold text-center text-black mb-2 font-rufina">Enquiry Form</h1>
                 <h2 className="text-xl font-semibold text-center text-black mb-6 font-dmsans">Get in touch with our Technical Experts</h2>

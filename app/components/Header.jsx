@@ -16,13 +16,13 @@ function Header() {
         });
     }
     return (
-        <div className=' absolute top-0 left-0 w-screen flex justify-between px-5 py-5 z-50'>
+        <div className=' absolute top-0 left-0 w-screen flex justify-between px-5 py-5 z-50 font-dmsans'>
             <div className=' absolute px-0 lg:px-5'>
                 <div className=" fixed flex flex-row justify-between items-center w-screen px-0 lg:px-12">
-                    <p className=' text-yellow-400 text-xl lg:text-2xl font-bold'>Construction Ease</p>
+                    <p className=' text-yellow-400 text-xl lg:text-2xl font-bold font-rufina'>Construction Ease</p>
                     <div className="">
                         {!menuOpen ? <button className=' flex flex-row font-bold items-center gap-3 text-yellow-400 mr-10' onClick={toggleMenu}>
-                            <p>Menu</p>
+                            <p className='font-rufina'>Menu</p>
                             <div><AiOutlineMenuFold size={20} /></div>
                         </button> : <button
                             className='flex flex-row items-center gap-3 text-yellow-400 mr-10'

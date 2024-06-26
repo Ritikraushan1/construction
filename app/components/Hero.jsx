@@ -10,10 +10,10 @@ function Hero() {
         setMenuOpen(!menuOpen);
     };
     return (
-        <div className=' relative bg-hero h-screen w-screen'>
+        <div className=' relative bg-hero h-screen w-screen font-dmsans'>
             <div className=' w-screen h-screen bg-black bg-opacity-60 z-0'>
                 <div className="absolute pt-[80%] lg:pt-[30%] text-black z-40">
-                    <p className='text-2xl lg:text-5xl ml-5 lg:ml-20 font-semibold text-white leading-16'>APARTMENT <span className=' ml-5 lg:ml-20 text-yellow-400'>RENOVATIONS</span><br />IN MANCHESTER AND LEVERPOOL</p>
+                    <p className='text-2xl lg:text-5xl ml-5 lg:ml-20 font-semibold text-white leading-16 font-rufina'>APARTMENT <span className=' ml-5 lg:ml-20 text-yellow-400'>RENOVATIONS</span><br />IN MANCHESTER AND LEVERPOOL</p>
                 </div>
                 <div className=" hidden lg:grid grid-rows-5 h-full z-50">
                     {/* 1st column */}

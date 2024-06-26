@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
     return (
-        <div className=' bg-white py-16 h-max lg:h-screen items-center justify-center flex w-screen '>
+        <div className=' bg-white py-16 h-max lg:h-screen items-center justify-center flex w-screen font-dmsans'>
             <div className=" flex flex-col lg:flex-row mx-5 md:mx-[10%] gap-x-32">
                 <div className=" flex flex-row gap-7">
                     <div className="">
@@ -21,7 +21,7 @@ function About() {
                     </div>
                     <div className="flex flex-row items-center pt-3">
                         <hr className='border-[1px] border-white w-10' />
-                        <h2 className=' text-black text-2xl px-7 font-semibold font-sans'>CONSTRUCTION<br /> EASE</h2>
+                        <h2 className=' text-black text-2xl px-7 font-semibold font-rufina'>CONSTRUCTION<br /> EASE</h2>
                     </div>
                     <div className="flex flex-row items-center pt-7">
                         <hr className='border-[1px] border-white w-10' />

@@ -2497,7 +2497,7 @@ export default function Package() {
 
     return (
         <div>
-            <div className="w-screen h-full pb-12 bg-slate-200 pt-0 lg:pt-10">
+            <div className="w-screen h-full pb-12 bg-slate-200 pt-0 lg:pt-10 font-dmsans">
                 <div className="">
                     <h1 className=' text-2xl lg:text-4xl font-bold text-black font-rufina text-center'>Packages</h1>
                     <p className=' text-black text-sm lg:text-xl leading-7 pt-3 font-dmsans mx-7 lg:mx-0 text-center'>Find the best home construction packages.*</p>
