@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Cookies from "js-cookie";
 
 const Popup = ({ onClose }) => {
-  const [selection, setSelection] = useState("");
+  const [selection, setSelection] = useState("Ambala");
 
   const handleSave = () => {
     Cookies.set("location", selection, { expires: 7 });
@@ -32,6 +32,7 @@ const Popup = ({ onClose }) => {
                 className="border border-gray-300 p-1 lg:p-2 text-black mb-4"
                 value={selection}
                 onChange={(e) => setSelection(e.target.value)}
+                defaultValue="Ambala"
               >
                 <option value="Ambala">Ambala</option>
                 <option value="Chandigarh">Chandigarh</option>
