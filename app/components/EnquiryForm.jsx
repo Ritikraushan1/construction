@@ -9,6 +9,7 @@ import Select from '@mui/material/Select';
 import InputAdornment from '@mui/material/InputAdornment';
 import Input from '@mui/material/Input';
 import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
 
 export default function EnquiryForm() {
     const [formData, setFormData] = useState({
@@ -124,7 +125,7 @@ export default function EnquiryForm() {
                         InputLabelProps={{ className: 'font-dmsans text-lg' }}
                     />
                     <div className="text-center mt-4">
-                        <Button variant="contained" className=' bg-black text-yellow-400 px-16 py-3 text-xl rounded-full' type="submit">Submit</Button>
+                        <Button variant="contained" className=' bg-black text-yellow-400 px-16 py-3 text-xl rounded-full' type="submit" endIcon={<SendIcon fontSize='large' />}>Submit</Button>
                     </div>
                 </form>
             </div>
