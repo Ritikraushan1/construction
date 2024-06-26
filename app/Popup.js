@@ -47,7 +47,7 @@ const Popup = ({ onClose }) => {
                 <option value="Yamunanagar">Yamunanagar</option>
               </select>
               <button
-                className="bg-black text-yellow-400 ml-3 px-4 py-1 lg:py-2 rounded hover:bg-blue-700"
+                className="bg-black hover:bg-white text-yellow-400 hover:text-black hover:border-black hover:border-[1px] border-opacity-25 ml-7 px-7 py-2 rounded-sm uppercase text-sm"
                 onClick={handleSave}
               >
                 Search
