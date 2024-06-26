@@ -11,6 +11,7 @@ import WhyUs from "./components/WhyUs";
 import Cookies from "js-cookie";
 import Popup from "./Popup";
 import Package from "./components/Package";
+import EnquiryForm from "./components/EnquiryForm";
 
 export default function Home() {
   const [showPopup, setShowPopup] = useState(false);
@@ -38,6 +39,7 @@ export default function Home() {
       <WhyUs />
       <Video />
       <Howitwork />
+      <EnquiryForm />
     </main>
   );
 }

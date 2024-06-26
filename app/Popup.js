@@ -14,9 +14,9 @@ const Popup = ({ onClose }) => {
 
   return (
     <div className="fixed bg-gray-800 bg-opacity-75 inset-0 flex items-center justify-center z-50">
-      <div className="bg-white py-10 px-5 lg:px-32 rounded shadow-lg text-center w-[90%] lg:w-[50%]">
-        <div className="grid grid-cols-2 items-center justify-center">
-          <div className=" flex items-center">
+      <div className="bg-white py-10 px-5 lg:px-24 rounded shadow-lg text-center w-[90%] lg:w-[60%] h-[70%] md:h-[80%] lg:h-[50%]">
+        <div className="grid grid-rows-2 lg:grid-cols-2 items-center justify-center">
+          <div className=" flex items-center justify-center">
             <img
               src="/images/popup.svg"
               alt="logo"
