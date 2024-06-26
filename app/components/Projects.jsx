@@ -3,8 +3,8 @@ import React from 'react'
 
 export default function Projects() {
     return (
-        <div className='w-screen h-max lg:h-screen lg:pt-0 md:pt-5'>
-            <div className=" grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 bg-black opacity-60 z-50 text-white">
+        <div className='w-screen h-max lg:h-screen lg:pt-0 md:pt-5 bg-black opacity-60'>
+            <div className=" grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3  z-50 text-white">
                 <div className="relative h-full">
                     <div className=" ">
                         <img src="/images/img4.jpg" alt="project1" className=' w-full h-screen object-cover ' />
