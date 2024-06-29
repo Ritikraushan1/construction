@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from '@mui/material'
 
 function About() {
     return (
@@ -33,9 +34,9 @@ function About() {
                     </div>
                     <div className="flex flex-row items-center pt-12">
                         <hr className='border-[1px] border-white w-10' />
-                        <button className='bg-black hover:bg-white text-yellow-400 hover:text-black hover:border-black hover:border-[1px] border-opacity-25 ml-7 px-7 py-2 rounded-sm uppercase text-sm'>
+                        <Button variant="contained" className='bg-yellow-400 hover:bg-white text-black hover:text-black hover:border-black hover:border-[1px] border-opacity-25 ml-7 px-7 py-3 rounded-sm uppercase text-sm' type="submit">
                             <a href="#">Read More</a>
-                        </button>
+                        </Button>
                     </div>
                 </div>
             </div>

@@ -2496,9 +2496,9 @@ export default function Package() {
     console.log(currentPackages);
 
     return (
-        <div>
-            <div className="w-screen h-full pb-12 bg-slate-200 pt-0 lg:pt-10 font-dmsans">
-                <div className="">
+        <>
+            <section className="w-screen h-full pb-12 bg-slate-200 pt-0 lg:pt-10 font-dmsans">
+                <div className=" border-none">
                     <h1 className=' text-2xl lg:text-4xl font-bold text-black font-rufina text-center'>Packages</h1>
                     <p className=' text-black text-sm lg:text-xl leading-7 pt-3 font-dmsans mx-7 lg:mx-0 text-center'>Find the best home construction packages.*</p>
                     <div className='text-black text-sm lg:text-xl pt-3 flex flex-row items-center justify-center text-center'>
@@ -2523,11 +2523,11 @@ export default function Package() {
                         </select>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 pt-5 mx-5 lg:mx-20">
+                <div className="grid grid-cols-1 lg:grid-cols-3 pt-5 mx-5 px-5 lg:mx-20 gap-[75px]">
                     {Array.isArray(currentPackages) && currentPackages.length > 0 ? (
                         currentPackages.map((pkg) => (
                             <div key={pkg.name} className="text-black">
-                                <div className="">
+                                <div className="border-none">
                                     <div className="h-fit items-center font-dmsans justify-center bg-yellow-400 text-center py-3 flex flex-row text-sm gap-2 font-bold">
                                         <p>{pkg.name} - </p>
                                         <p>{pkg.price}</p>
@@ -2727,7 +2727,7 @@ export default function Package() {
                         <p className="text-center col-span-3 text-black">No packages available for the selected location.</p>
                     )}
                 </div>
-            </div>
-        </div>
+            </section>
+        </>
     );
 }
