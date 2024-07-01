@@ -36,12 +36,13 @@ function Header() {
 
                     <nav className="flex flex-col items-end space-y-1 mr-5">
                         <a href="/" className="text-2xl text-white opacity-60 hover:opacity-95">Home</a>
-                        <a href="#" className="text-2xl text-white opacity-60 hover:opacity-95">Services</a>
-                        <a href="#" className="text-2xl text-white opacity-60 hover:opacity-95">Projects</a>
-                        <a href="#" className="text-2xl text-white opacity-60 hover:opacity-95">Interior Design</a>
-                        <a href="#" className="text-2xl text-white opacity-60 hover:opacity-95">Price</a>
-                        <a href="#" className="text-2xl text-white opacity-60 hover:opacity-95">About Us</a>
-                        <a href="#" className="text-2xl text-white opacity-60 hover:opacity-95">Contact Us</a>
+                        <a href="/services" className="text-2xl text-white opacity-60 hover:opacity-95">Services</a>
+                        <a href="/projects" className="text-2xl text-white opacity-60 hover:opacity-95">Projects</a>
+                        <a href="/calculator" className="text-2xl text-white opacity-60 hover:opacity-95">Calculator</a>
+                        <a href="/packages" className="text-2xl text-white opacity-60 hover:opacity-95">Packages</a>
+                        <a href="/blogs" className="text-2xl text-white opacity-60 hover:opacity-95">Blogs</a>
+                        <a href="/about" className="text-2xl text-white opacity-60 hover:opacity-95">About Us</a>
+                        <a href="/contact" className="text-2xl text-white opacity-60 hover:opacity-95">Contact Us</a>
                     </nav>
                 </div>
                 )}

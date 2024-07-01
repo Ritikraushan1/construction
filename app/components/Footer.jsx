@@ -10,7 +10,7 @@ function Footer() {
                     <h2 className='text-yellow-400 text-2xl font-semibold uppercase font-rufina'>Let's work together</h2>
                     <p className='hidden lg:flex text-center pt-7 opacity-80 text-sm'>Let us know what you're looking for in an agency. We'll take a look and see<br /> if this could be the start of something beautiful.</p>
                     <p className='flex lg:hidden text-center pt-7 opacity-80 mx-10 text-sm'>Let us know what you're looking for in an agency. We'll take a look and see if this could be the start of something beautiful.</p>
-                    <button className=' border-[1px] text-xs border-white border-opacity-35 mt-10 px-10 py-3 rounded-sm uppercase'><a href="" className=' opacity-70'>Contact Us</a></button>
+                    <button className=' border-[1px] text-xs border-white border-opacity-35 mt-10 px-10 py-3 rounded-sm uppercase bg-black text-yellow-400 hover:bg-transparent hover:drop-shadow-lg'><a href="" className=' opacity-70'>Contact Us</a></button>
                 </div>
             </div>
             <div className=" bg-black grid grid-cols-1 lg:grid-cols-4 px-20 py-16 w-screen">

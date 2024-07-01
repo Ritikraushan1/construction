@@ -44,23 +44,22 @@ export default function EnquiryForm() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 gap-x-8">
                         <TextField id="standard-basic" label="Name" variant="standard" required fullWidth name="name"
                             value={formData.name}
-                            InputLabelProps={{ className: 'font-dmsans text-lg ml-2' }}
+                            InputLabelProps={{ className: 'font-dmsans text-lg' }}
                             onChange={handleChange} />
                         <TextField id="standard-basic" label="Email" variant="standard" required fullWidth name="email"
                             value={formData.email}
-                            InputLabelProps={{ className: 'font-dmsans' }}
+                            InputLabelProps={{ className: 'font-dmsans text-lg' }}
                             onChange={handleChange}
                         />
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 gap-x-8">
-                        <FormControl variant="standard" fullWidth required>
-                            <InputLabel htmlFor="standard-adornment-amount" className='font-dmsans'>Mobile Number</InputLabel>
+                        <FormControl variant="standard" fullWidth>
+                            <InputLabel htmlFor="standard-adornment-amount" className='font-dmsans'></InputLabel>
                             <Input
                                 id="standard-adornment-amount"
                                 startAdornment={<InputAdornment position="start">+91</InputAdornment>}
-                                label="Mobile Number"
                                 variant="standard"
-                                placeholder='Mobile Number'
+                                placeholder='Mobile Number *'
                                 name="mobileNumber"
                                 value={formData.mobileNumber}
                                 onChange={handleChange}
@@ -68,7 +67,7 @@ export default function EnquiryForm() {
                             />
                         </FormControl>
                         <FormControl variant="standard" fullWidth required>
-                            <InputLabel id="city-label" className='font-dmsans'>Location</InputLabel>
+                            <InputLabel id="city-label" className='font-dmsans text-lg'>Location</InputLabel>
                             <Select
                                 labelId="city-label"
                                 id="city"
@@ -115,7 +114,8 @@ export default function EnquiryForm() {
                         id="enquiry"
                         label="Enquiry"
                         multiline
-                        rows={2}
+                        minRows={1}
+                        maxRows={3}
                         variant="standard"
                         required
                         fullWidth
