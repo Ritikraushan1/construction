@@ -1,10 +1,10 @@
 import React from "react";
-import EnquiryForm from "../components/EnquiryForm";
+import ContactForm from "./ContactForm";
 
 export default function page() {
   return (
     <div>
-      <EnquiryForm />
+      <ContactForm />
     </div>
   );
 }
